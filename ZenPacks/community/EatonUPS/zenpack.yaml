@@ -1,1 +1,9 @@
 name: ZenPacks.community.EatonUPS
+device_classes:
+  /Power/UPS/Eaton:
+    zProperties:
+      zCollectorPlugins:
+        - zenoss.snmp.NewDeviceMap
+        - zenoss.snmp.DeviceMap
+        - zenoss.snmp.InterfaceMap
+        - zenoss.snmp.RouteMap
